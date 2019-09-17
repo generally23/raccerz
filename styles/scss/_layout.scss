@@ -81,9 +81,8 @@ body {
 
     &__item {
         float: left;
-        width: calc((100% - (8 * 2rem)) / 4);
-        margin: 2rem;
-        //height: 15rem;
+        width: calc((100% - (8 * 1rem)) / 4);
+        margin: 1rem;
     }
 }
 

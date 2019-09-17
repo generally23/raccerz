@@ -83,8 +83,8 @@ body {
     clear: both; }
   .partners__item {
     float: left;
-    width: calc((100% - (8 * 2rem)) / 4);
-    margin: 2rem; }
+    width: calc((100% - (8 * 1rem)) / 4);
+    margin: 1rem; }
 
 .footer {
   background: #7b07a8; }
