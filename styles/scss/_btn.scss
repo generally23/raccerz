@@ -1,0 +1,24 @@
+.cta-btn {
+    &:link,
+    &:visited {
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        display: inline-block;
+        font-size: 1.8rem;
+        border: 2px solid $color-orange;
+        color: $color-orange;
+        transition: color .5s;
+    }
+
+    &:active,
+    &:hover {
+        background: $color-orange;
+        color: $color-tertiary;
+    }
+    
+    &--icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}

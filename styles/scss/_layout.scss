@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// ELEMENTS WITH 100% WIDTH
+.header,
+.overlay,
+.section-plans,
+.partners,
+.footer {
+    width: 100%;
+}
+
+.header {
+    background: #f452f4;
+}
+
+.overlay {
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary, .6),
+        rgba($color-tertiary, .8)
+    );
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    &__content-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+    }
+    &__title {
+        font-size: 4.5rem;
+        font-style: italic;
+        font-weight: normal;
+    }
+}
+
+.section-plans {
+    background: rgba($color-tertiary, .8);
+    padding: 10rem;
+}
+
+.location {
+    width: 30%;
+    background: #be0a79;
+}
+
+.testimonials {
+    width: 70%;
+    background: rgba($color-secondary, .8);
+    padding: 5rem;
+    position: relative;
+}
+
+.partners {
+    padding: 10rem;
+    padding-top: 5rem;
+    background: rgba($color-tertiary, .8);
+    &__list {
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    &__item {
+        float: left;
+        width: calc((100% - (8 * 2rem)) / 4);
+        margin: 2rem;
+        //height: 15rem;
+    }
+}
+
+.footer {
+    background: #7b07a8;
+}
