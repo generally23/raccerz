@@ -1,6 +1,7 @@
 .testimonial {
     padding: 2rem;
-    background: rgba($color-tertiary, .8);
+    background: $color-secondary;
+    border-radius: 2rem 0 2rem 0;
     .client {
         text-align: center;
         margin-bottom: 5px;
@@ -10,12 +11,12 @@
             border-radius: 100%;
             object-fit: cover;
             display: inline-block;
-            border: 2px solid $color-secondary;
+            user-select: none;
         }
         &__name {
         }
         &__testimony {
-
+            font-style: italic;
         }
     }
 
@@ -27,8 +28,8 @@
         border: none;
         padding: 1rem;
         &__icon {
-            width: 2rem;
-            height: 2rem;
+            @include setSvgDimentions(2rem);
+            fill: $color-secondary;
         }
     }
     &-toggler--prev {

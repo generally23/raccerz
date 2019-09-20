@@ -2,9 +2,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.7;
-  color: #777;
   font-size: 1.6rem; }
 
 *,
@@ -25,39 +24,37 @@ body {
   flex-wrap: wrap; }
 
 .header,
-.overlay,
 .section-plans,
 .partners,
 .footer {
   width: 100%; }
 
 .header {
-  background: #f452f4; }
-
-.overlay {
-  height: 100vh;
-  position: relative;
-  background-attachment: fixed;
-  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)); }
-  .overlay__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover; }
-  .overlay__content-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center; }
-  .overlay__title {
-    font-size: 4.5rem;
-    font-style: italic;
-    font-weight: normal; }
+  color: #fff; }
+  .header .overlay {
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)); }
+    .header .overlay__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover; }
+    .header .overlay__content-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      text-align: center; }
+    .header .overlay__title {
+      font-size: 4.5rem;
+      font-style: italic;
+      font-weight: normal; }
 
 .section-plans {
   background: rgba(0, 0, 0, 0.8);
@@ -69,42 +66,65 @@ body {
 
 .testimonials {
   width: 70%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   padding: 5rem;
   position: relative; }
 
 .partners {
+  color: #fff;
   padding: 10rem;
   padding-top: 5rem;
   background: rgba(0, 0, 0, 0.8); }
-  .partners__list::after {
-    content: "";
-    display: table;
-    clear: both; }
+  .partners__list {
+    background: #fff;
+    padding: 5rem; }
+    .partners__list::after {
+      content: "";
+      display: table;
+      clear: both; }
   .partners__item {
     float: left;
     width: calc((100% - (8 * 1rem)) / 4);
     margin: 1rem; }
 
 .footer {
-  background: #7b07a8; }
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer__footer__logo-box {
+    width: 30%; }
+  .footer__nav {
+    flex: 1;
+    vertical-align: middle; }
+  .footer__social-media {
+    text-align: center; }
+    .footer__social-media__link:not(:last-child) {
+      margin-right: 1.5rem; }
+    .footer__social-media__icon {
+      width: 3rem;
+      height: 3rem; }
+
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
+  color: #ccc;
+  font-family: "Yanone Kaffeesatz"; }
 
 .heading-1 {
   font-size: 6rem;
   letter-spacing: 5px; }
 
 .heading-2 {
-  font-size: 4rem;
-  letter-spacing: 5px; }
+  font-size: 5rem; }
 
 .heading-3 {
-  font-size: 3rem; }
+  font-size: 4rem; }
 
 .heading-4 {
-  font-size: 2rem; }
+  font-size: 3rem; }
 
 .heading-5 {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 .u-mb-xs {
   margin-bottom: 10px !important; }
@@ -125,32 +145,32 @@ body {
   text-align: center !important; }
 
 .u-fw-1 {
-  font-weight: 100; }
+  font-weight: 100 !important; }
 
 .u-fw-2 {
-  font-weight: 200; }
+  font-weight: 200 !important; }
 
 .u-fw-3 {
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
 .u-fw-4 {
-  font-weight: 400; }
+  font-weight: 400 !important; }
 
 .u-fw-5 {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 .u-fw-6 {
-  font-weight: 600; }
+  font-weight: 600 !important; }
 
 .u-fw-7 {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .plans {
   display: flex;
   justify-content: space-between; }
   .plans .plan {
     background: #fff;
-    width: calc((100% - 5rem) / 3);
+    width: calc((100% - 8rem) / 3);
     padding: 2rem;
     text-align: center;
     transition: transform .2s ease-in-out;
@@ -161,7 +181,8 @@ body {
       display: block;
       width: 5rem;
       height: 5rem;
-      margin: 0 auto; }
+      margin: 0 auto;
+      fill: #f82738; }
     .plans .plan__details {
       list-style: none; }
     .plans .plan__detail {
@@ -171,7 +192,8 @@ body {
 
 .testimonial {
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.8); }
+  background: #fff;
+  border-radius: 2rem 0 2rem 0; }
   .testimonial .client {
     text-align: center;
     margin-bottom: 5px; }
@@ -181,7 +203,9 @@ body {
       border-radius: 100%;
       object-fit: cover;
       display: inline-block;
-      border: 2px solid #fff; }
+      user-select: none; }
+    .testimonial .client__testimony {
+      font-style: italic; }
   .testimonial-toggler {
     position: absolute;
     top: 50%;
@@ -191,7 +215,8 @@ body {
     padding: 1rem; }
     .testimonial-toggler__icon {
       width: 2rem;
-      height: 2rem; }
+      height: 2rem;
+      fill: #fff; }
   .testimonial-toggler--prev {
     left: 0; }
   .testimonial-toggler--next {

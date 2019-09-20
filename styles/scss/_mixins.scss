@@ -1,0 +1,13 @@
+@mixin setHeading () {
+    @content;
+}
+
+
+@mixin setLetterSpacing ($number) {
+    letter-spacing: $number;
+}
+
+@mixin setSvgDimentions ($size) {
+    width: $size;
+    height: $size;
+}

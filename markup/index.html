@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="shortcut icon" href="../assets/shortcut__icon.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,900,900i|Ropa+Sans|Saira+Semi+Condensed:400,500,600,700,800,900|Yanone+Kaffeesatz:400,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
-        HEADER
+        <section class="overlay">
+            <video src="../assets/bg_video.mp4" class="overlay__video" autoplay muted loop></video>
+            <div class="overlay__content-box">
+                <h1 class="overlay__title u-ct u-fw-1 u-mb-sm">
+                    Passioned about racing cars ?<br>
+                    come live the dream with us
+                </h1>
+                <a href="#" class="cta-btn">Explore Plans</a>
+            </div>
+        </section>
     </header>
 
-    <section class="overlay">
-        <video src="../assets/bg_video.mp4" class="overlay__video" autoplay muted loop></video>
-        <div class="overlay__content-box">
-            <h1 class="overlay__title u-ct u-fw-1 u-mb-sm">
-                Passioned about cars but never seen them race ?<br>
-                come live the dream with us
-            </h1>
-            <a href="#" class="cta-btn">Explore Plans</a>
-        </div>
-    </section>
-
     <section class="section-plans">
-        <h1 class="heading-2 u-mb-xl u-ct">Choose a plan that fits you</h1>
+        <h1 class="heading-1 u-fw-1 u-mb-xl u-ct">Choose a plan that fits you</h1>
         <div class="plans">
             <div class="plan">
                 <svg class="plan__icon u-mb-xs">
@@ -99,8 +101,10 @@
         <div class="testimonial">
             <figure class="client">
                 <img src="../assets/person2_profile.jpg" alt="" class="client__photo">
+                <figcaption>
+                    <h4 class="client__name u-ct">Michaele Ardis</h4>
+                </figcaption>
             </figure>
-            <h4 class="client__name u-ct">Michaele Ardis</h4>
             <p class="client__testimony">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente distinctio atque illum quasi
                 ex non cumque modi harum, provident quia culpa exercitationem neque. Voluptate minima
@@ -120,7 +124,7 @@
     </section>
 
     <section class="partners">
-        <h1 class="u-ct u-mb-xl heading-2 u-fw-1">Our Partners</h1>
+        <h1 class="u-ct u-mb-xl heading-1 u-fw-1">Our Partners</h1>
         <nav class="partners__list">
             <div class="partners__item">
                 <a href="#">
@@ -166,8 +170,53 @@
     </section>
 
     <footer class="footer">
-        FOOTER
+        <div class="footer__wrapper">
+            <div class="footer__logo-box">
+                <img src="../assets/logo.png" alt="logo" class="footer__logo">
+            </div>
+            <nav class="footer__nav">
+                <a href="#" class="footer__nav__link">Services</a>
+                <a href="#" class="footer__nav__link">Contact</a>
+                <a href="#" class="footer__nav__link">About Us</a>
+                <a href="#" class="footer__nav__link">Privacy & Policy</a>
+                <a href="#" class="footer__nav__link">Terms of Service</a>
+                <a href="#" class="footer__nav__link">Signup</a>
+                <a href="#" class="footer__nav__link">Signin</a>
+                <a href="#" class="footer__nav__link">Plans</a>
+            </nav>
+        </div>
+        <nav class="footer__social-media u-mb-xs">
+            <a href="#" class="footer__social-media__link">
+                <svg class="footer__social-media__icon">
+                    <use xlink:href="../icons/sprite.svg#iconfacebook"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-media__link">
+                <svg class="footer__social-media__icon">
+                    <use xlink:href="../icons/sprite.svg#icontwitter1"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-media__link">
+                <svg class="footer__social-media__icon">
+                    <use xlink:href="../icons/sprite.svg#icongoogleplus"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-media__link">
+                <svg class="footer__social-media__icon">
+                    <use xlink:href="../icons/sprite.svg#iconskype1"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer__social-media__link">
+                <svg class="footer__social-media__icon">
+                    <use xlink:href="../icons/sprite.svg#iconlinkedin"></use>
+                </svg>
+            </a>
+        </nav>
+        <p class="footer__copyright u-ct"><small>&copy; 2019 - Generally all rights reserved</small></p>
     </footer>
 </body>
 
 </html>
+
+
+Twitter --> Facebook --> LinkedIn --> Google+ --> Skype

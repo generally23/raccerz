@@ -1,21 +1,29 @@
+.heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
+    @include setHeading () {
+        color: $color-primary-light-gray;
+        font-family: $font-2;
+    }
+}
+
+
 .heading-1 {
-    font-size: 6rem;
-    letter-spacing: 5px;
+    font-size: $fs-heading-1;
+    @include setLetterSpacing(5px);
 }
 
 .heading-2 {
-    font-size: 4rem;
-    letter-spacing: 5px;
+    font-size: $fs-heading-2;
 }
 
+
 .heading-3 {
-    font-size: 3rem;
+    font-size: $fs-heading-3;
 }
 
 .heading-4 {
-    font-size: 2rem;
+    font-size: $fs-heading-4;
 }
 
 .heading-5 {
-    font-size: 1.5rem;
+    font-size: $fs-heading-5;
 }
