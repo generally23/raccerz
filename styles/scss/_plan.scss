@@ -7,9 +7,10 @@
         padding: 2rem;
         text-align: center;
         transition: transform .2s ease-in-out;
+        font-size: 1.5rem;
         cursor: pointer;
         &:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
         }
         &__icon {
             display: block;
@@ -23,6 +24,8 @@
     
         &__details {
             list-style: none;
+            display: inline-block;
+            text-align: initial;
         }
     
         &__detail {

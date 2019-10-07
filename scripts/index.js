@@ -42,3 +42,22 @@ function cleanCss(code, i = 0) {
     ) return '' + cleanCss(code, i + 1);
     return char + cleanCss(code, i + 1);
 }
+`
+var a = 0;
+function| cleanCss(code, i = 0) {
+    if (i === code.length) return '';
+    const tokens = {};
+    const char = code[i];
+    const prevChar = code[i - 1];
+    const nextChar = code[i + 1];
+    const newlineChar = '\n';
+    const spaceChar = ' ';
+    if (
+        (char === newlineChar) ||
+        (char === spaceChar) && (prevChar === char || nextChar === char) ||
+        (char === spaceChar) && (tokens[prevChar] || tokens[nextChar]) ||
+        (char === ';') && nextChar === '}'
+    ) return '' + cleanCss(code, i + 1);
+    return char + cleanCss(code, i + 1);
+}`
+

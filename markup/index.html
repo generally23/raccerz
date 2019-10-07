@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="shortcut icon" href="../assets/shortcut__icon.png" type="image/png">
     <link
-        href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,900,900i|Ropa+Sans|Saira+Semi+Condensed:400,500,600,700,800,900|Yanone+Kaffeesatz:400,700&display=swap"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i,800,900,900i|Ropa+Sans|Saira+Semi+Condensed:400,500,600,700,800,900|Yanone+Kaffeesatz:400,700&display=swap"
         rel="stylesheet">
     <title>Document</title>
 </head>
@@ -26,6 +26,10 @@
             </div>
         </section>
     </header>
+
+    <section class="intro">
+        W'ere raccerz and we 
+    </section>
 
     <section class="section-plans">
         <h1 class="heading-1 u-fw-1 u-mb-xl u-ct">Choose a plan that fits you</h1>
@@ -54,7 +58,7 @@
                 <svg class="plan__icon u-mb-xs">
                     <use xlink:href="../icons/sprite.svg#icontrophy"></use>
                 </svg>
-                <h3 class="plan__name u-ct u-mb-xs">Medium</h3>
+                <h3 class="plan__name u-mb-xs">Medium</h3>
                 <ul class="plan__details u-mb-xs">
                     <li class="plan__detail">Go to Hiking with friends</li>
                     <li class="plan__detail">Free drinks all day long</li>
@@ -91,6 +95,18 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="gallery">
+        <figure class="gallery__cover">
+            <img src="../assets//gallery-1.jpg" alt="" class="gallery__img">
+        </figure>
+        <figure class="gallery__cover">
+            <img src="../assets/gallery-2.jpg" alt="" class="gallery__img">
+        </figure>
+        <figure class="gallery__cover">
+            <img src="../assets/gallery-3.jpg" alt="" class="gallery__img">
+        </figure>
     </section>
 
     <section class="location">
@@ -170,53 +186,64 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__logo-box">
-                <img src="../assets/logo.png" alt="logo" class="footer__logo">
-            </div>
-            <nav class="footer__nav">
-                <a href="#" class="footer__nav__link">Services</a>
-                <a href="#" class="footer__nav__link">Contact</a>
-                <a href="#" class="footer__nav__link">About Us</a>
-                <a href="#" class="footer__nav__link">Privacy & Policy</a>
-                <a href="#" class="footer__nav__link">Terms of Service</a>
-                <a href="#" class="footer__nav__link">Signup</a>
-                <a href="#" class="footer__nav__link">Signin</a>
-                <a href="#" class="footer__nav__link">Plans</a>
-            </nav>
-        </div>
-        <nav class="footer__social-media u-mb-xs">
-            <a href="#" class="footer__social-media__link">
-                <svg class="footer__social-media__icon">
-                    <use xlink:href="../icons/sprite.svg#iconfacebook"></use>
-                </svg>
-            </a>
-            <a href="#" class="footer__social-media__link">
-                <svg class="footer__social-media__icon">
-                    <use xlink:href="../icons/sprite.svg#icontwitter1"></use>
-                </svg>
-            </a>
-            <a href="#" class="footer__social-media__link">
-                <svg class="footer__social-media__icon">
-                    <use xlink:href="../icons/sprite.svg#icongoogleplus"></use>
-                </svg>
-            </a>
-            <a href="#" class="footer__social-media__link">
-                <svg class="footer__social-media__icon">
-                    <use xlink:href="../icons/sprite.svg#iconskype1"></use>
-                </svg>
-            </a>
-            <a href="#" class="footer__social-media__link">
-                <svg class="footer__social-media__icon">
-                    <use xlink:href="../icons/sprite.svg#iconlinkedin"></use>
-                </svg>
-            </a>
+        <!-- NAVIGATION -->
+        <nav class="footer__navigation">
+            <ul class="menu">
+                <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Partners</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Terms of Use</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Privacy & Policy</a></li>
+            </ul>
+            <!-- SOCIAL MEDIA LINKS { SOCIAL CLASS REPRESENT SOCIAL MEDIA } -->
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="../icons/sprite.svg#iconfacebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="../icons/sprite.svg#iconlinkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="../icons/sprite.svg#icontwitter1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="../icons/sprite.svg#iconskype1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg class="social__icon">
+                            <use xlink:href="../icons/sprite.svg#icongoogleplus"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </nav>
-        <p class="footer__copyright u-ct"><small>&copy; 2019 - Generally all rights reserved</small></p>
+        <!-- COPYRIGHT -->
+        <p class="footer__copyright">&copy; 2019 - Raccerz all rights reserved</p>
+
     </footer>
+        
+       
 </body>
 
 </html>
 
 
-Twitter --> Facebook --> LinkedIn --> Google+ --> Skype
