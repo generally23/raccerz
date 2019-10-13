@@ -1,43 +1,13 @@
-.testimonial {
-    padding: 2rem;
-    background: $color-tertiary;
-    border-radius: 2rem 0 2rem 0;
-    .client {
-        text-align: center;
-        margin-bottom: 5px;
-        &__photo {
-            width: 10rem;
-            height: 10rem;
-            border-radius: 100%;
-            object-fit: cover;
-            display: inline-block;
-            user-select: none;
-        }
-        &__name {
-        }
-        &__testimony {
-            font-style: italic;
-        }
+.client {
+    width: calc((100% - 5%) / 3);
+    &__testimony {
+        background: $color-secondary;
     }
+    &__photo-box {
+        
+    }
+    &__photo {
 
-    &-toggler {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
-        border: none;
-        padding: 1rem;
-        &__icon {
-            @include setSvgDimentions(2rem);
-            fill: $color-secondary;
-        }
-    }
-    &-toggler--prev {
-        left: 0;
-    }
-
-    &-toggler--next {
-        right: 0;
     }
 }
 
